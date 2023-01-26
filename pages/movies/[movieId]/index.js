@@ -2,6 +2,7 @@
 import MovieDetails from '@/components/Movies/MovieDetails';
 import Navbar from '@/components/Navbar/Navbar';
 import movieData from '@/dummy_data';
+import Head from 'next/head';
 // import { movieData } from '@/pages';
 import React from 'react';
 
