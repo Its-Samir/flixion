@@ -1,0 +1,9 @@
+.Content img {
+    width: 50%;
+}
+
+@media (max-width: 426px) {
+    .Content h1, .Content p {
+        padding: 10px;
+    }    
+}

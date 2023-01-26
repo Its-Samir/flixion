@@ -1,0 +1,41 @@
+.Header {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../imgs/background-img.jpg');
+    background-size: cover;
+    color: #ffffff;
+    padding: 0 0 6rem 0;
+}
+
+.HeadContent {
+    font-size: 1.5rem;
+    margin: 5rem auto;
+    width: 70%;
+    text-align: center;
+}
+
+.HeadContent h4,
+.HeadContent p {
+    line-height: 2.5;
+}
+
+.InputDiv {
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .HeadContent h4, .HeadContent p {
+        line-height: 2;
+    }
+}
+
+@media (max-width: 426px) {
+    .HeadContent {
+        width: 100%;
+    }
+
+    .HeadContent h4,
+    .HeadContent p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}

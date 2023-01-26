@@ -1,0 +1,16 @@
+.Card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 1rem 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.Card:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+}

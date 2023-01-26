@@ -1,0 +1,8 @@
+.Loading {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 2rem auto;
+    color: #ffffff;
+    user-select: none;
+}

@@ -1,0 +1,43 @@
+.Navbar {
+    height: 80px;
+    background-color: transparent;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.List li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.List li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Navbar button {
+    display: none;
+    padding: 10px 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(231, 230, 230);
+}
+
+.Navbar button:hover {
+    background-color: rgb(156, 153, 153);
+    color: #ffffff;
+}
+
+@media (max-width: 426px) {
+    .List {
+        display: none;
+    }
+
+    .Navbar button {
+        display: block;
+    }
+}
