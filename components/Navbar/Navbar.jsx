@@ -9,7 +9,6 @@ function Navbar() {
       <ul className={styles.List}>
         <li><Link href="/">Home</Link></li>
         <li><Link href={`/movies`}>Movies</Link></li>
-        <li><a href="/">About</a></li>
       </ul>
       <button><Link href={`/movies`}>Movies</Link></button>
     </nav>
