@@ -24,12 +24,12 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    background-color: rgb(112, 112, 112);
+    background-color: rgb(94, 145, 147);
     color: rgb(255, 255, 255);
 }
 
 .DetailBtn:hover {
-    background-color: rgb(94, 145, 147);
+    background-color: rgb(88, 131, 133);
 }
 
 @media (max-width: 426px) {

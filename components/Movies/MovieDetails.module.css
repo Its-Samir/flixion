@@ -10,6 +10,7 @@
 
 .ImgDiv {
     width: 50%;
+    box-shadow: inset 2px 2px 5px 6px #000000;
 }
 
 .MovieDetails img {
@@ -35,7 +36,7 @@
     font-size: .8rem;
 }
 
-.Detail button {
+.WatchBtn {
     padding: 10px 1rem;
     margin: 1rem 0;
     border-radius: 5px;
@@ -45,9 +46,20 @@
     cursor: pointer;
 }
 
-.Detail button:hover {
+.WatchBtn:hover {
     background-color: rgb(88, 138, 141);
 }
+
+.TrailerBtn {
+    padding: 10px 1rem;
+    margin: .5rem 0;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid;
+    cursor: pointer;
+}
+
 
 @media (max-width: 768px) {
     .MovieDetails {

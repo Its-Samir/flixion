@@ -9,9 +9,11 @@ function MovieDetails(props) {
             </div>
             <div className={styles.Detail}>
                 <h1>{props.title}</h1>
-                <span>{props.directedBy}</span>
+                <span>directed by {props.directedBy}</span>
+                <span>2019 | Season 1 | 9.0 ratings</span>
                 <p>{props.desc}</p>
-                <button>Buy or Rent</button>
+                <button className={styles.WatchBtn}>Start Watching</button>
+                <button className={styles.TrailerBtn}>Watch Trailer</button>
             </div>
         </div>
     )

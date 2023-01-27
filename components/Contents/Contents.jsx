@@ -1,5 +1,5 @@
-import { data } from '@/dummy_data';
 import React from 'react';
+import { data } from '@/dummy_data';
 import Content from '../Content/Content';
 import styles from './Contents.module.css';
 

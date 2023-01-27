@@ -1,12 +1,10 @@
-// import MovieItem from '@/components/Movies/MovieItem';
+import React from 'react';
 import MovieDetails from '@/components/Movies/MovieDetails';
 import Navbar from '@/components/Navbar/Navbar';
-import movieData from '@/dummy_data';
+import Movie from '@/db/model';
 import Head from 'next/head';
-// import { movieData } from '@/pages';
-import React from 'react';
 
-function Movie(props) {
+function MovieDetail(props) {
   return (
     <>
       <Head>
@@ -23,10 +21,12 @@ function Movie(props) {
 
 
 export async function getStaticPaths() {
-  const movies = movieData.map((movie) => ({ params: { movieId: movie.id.toString() } }));
+  const movies = await Movie.find({}, {_id: 1});
+  
+  const moviesIdParams = movies.map(movie => ({params: {movieId: movie._id.toString()}}));
 
   return {
-    paths: movies,
+    paths: moviesIdParams,
     fallback: 'blocking'
   }
 }
@@ -34,14 +34,12 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const movieId = context.params.movieId;
 
-  const currMovie = movieData.find((movie) => {
-    return movie.id === movieId;
-  });
+  const currMovie = JSON.parse(JSON.stringify(await Movie.findById(movieId)));
 
 
   return {
     props: {
-      id: currMovie.id,
+      id: currMovie._id,
       title: currMovie.title,
       img: currMovie.img,
       desc: currMovie.desc,
@@ -51,4 +49,4 @@ export async function getStaticProps(context) {
 }
 
 
-export default Movie;
+export default MovieDetail;

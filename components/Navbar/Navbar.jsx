@@ -10,7 +10,7 @@ function Navbar() {
         <li><Link href="/">Home</Link></li>
         <li><Link href={`/movies`}>Movies</Link></li>
       </ul>
-      <button><Link href={`/movies`}>Movies</Link></button>
+      <Link className={styles.LinkBtn} href={`/movies`}><button>Movies</button></Link>
     </nav>
   )
 }
