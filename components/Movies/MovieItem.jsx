@@ -14,7 +14,7 @@ function MovieItem(props) {
             <img src={props.img} alt={props.title} />
             <div className={styles.Details}>
                 <h4>{props.title}</h4>
-                <p>{props.directedBy}</p>
+                <p>directed by {props.directedBy}</p>
                 <button className={styles.DetailBtn} onClick={showDetailsHandler}>Show Details</button>
             </div>
         </div>
